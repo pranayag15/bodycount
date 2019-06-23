@@ -3,7 +3,10 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     mongoose = require("mongoose"),
     MongoClient = require('mongodb').MongoClient;
+var cors = require('cors')
 
+
+app.use(cors())
 var url = "mongodb://giscledb:giscle#123@ds341847.mlab.com:41847/giscle"
 
 const dbName = 'giscle';
@@ -26,7 +29,7 @@ app.get("/allperson", (req, res) => {
         console.log("Connected successfully to server");
         dbo = client.db(dbName);
         var data = dbo.collection('person').find({}).toArray(function (err, docs) {
-            if(err) throw err;
+            if (err) throw err;
             // console.log(docs)
             res.send(docs);
         });
