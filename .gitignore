@@ -1,5 +1,5 @@
-python-script/.env
-python-script/app.py
-python-script/app2.py
-python-script/app3.py
-python-script/mongo.py
+backend/.env
+backend/app.py
+backend/app2.py
+backend/app3.py
+backend/mongo.py
