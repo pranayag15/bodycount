@@ -1,7 +1,10 @@
-backend/.env
-backend/app.py
-backend/app2.py
-backend/app3.py
-backend/mongo.py
+script/.env
+script/app.py
+script/app2.py
+script/app3.py
+script/mongo.py
 api/node_modules
+api/.env
+api/package-lock.json
+graph/package-lock.json
 graph/node_modules
